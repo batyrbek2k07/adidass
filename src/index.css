@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  margin-top: 500px;
+}
+.rigth img {
+  width: 700px;
+}
+.left h3 {
+  font-size: 40px;
+}
+
+.left button {
+  padding: 15px 30px;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+.bacction {
+  background: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/ss24_yeezy_hp_mh_boost_350_v2_steel_grey_d_5945820db0.png")
+    no-repeat center/cover;
+  height: 73vh;
+}
+
+.container1 {
+  position: relative;
+}
+
+.passigh {
+  position: absolute;
+  bottom: 10pc;
+  z-index: 99;
+  left: 5pc;
+}
+
+.valuesBtn {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+.value {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.value h1,
+p {
+  color: #fff;
+  width: 500px; 
+}
+
+.btn-paus{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+}
