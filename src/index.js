@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import ProductProvider from './components/ContexProduct/ContextProduct';
-import MainRoutes from './components/Routes/MainRoutes';
+import ProductProvider from './ContexProduct/ContextProduct';
+import MainRoutes from './Routes/MainRoutes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

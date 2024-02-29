@@ -45,9 +45,11 @@ const Section = () => {
               loop
               muted
               playsInline
-              style={{
+              style={{ 
+                position: "relative",
+                zIndex: "-1",
                 width: "100%",
-                height: "100vh",
+                height: "130vh",
                 margin: "-60px 0 0 0",
               }}
               src="https://videos.adidas.com/video/upload/if_w_gt_1920,w_1920/running_ss24_supernova_global_launch_hp_masthead_d_2ddca3b2e2.mp4"
@@ -55,7 +57,10 @@ const Section = () => {
           </div>
             <div className="passigh">
               <div className="container">
-                <div className="value">
+                <div style={{
+                  marginTop: "-300px",
+                  zIndex: "1"
+                }} className="value">
                   <h1>
                     SUPERCOMFORT. <br />
                     SUPERNOVA.

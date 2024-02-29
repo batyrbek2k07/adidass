@@ -7,7 +7,7 @@ import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import './product.css';
 import { useNavigate } from 'react-router-dom';
-import { useProduct } from '../ContexProduct/ContextProduct';
+import { useProduct } from '../../ContexProduct/ContextProduct';
 
 const ProductList = () => {
     const { readProduct, product, deleteProduct ,getOneProduct, addBasket} = useProduct();

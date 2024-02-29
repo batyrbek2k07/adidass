@@ -37,12 +37,12 @@
 .bacction {
   background: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/ss24_yeezy_hp_mh_boost_350_v2_steel_grey_d_5945820db0.png")
     no-repeat center/cover;
-  height: 73vh;
+  height: 150vh;
 }
 
-.container1 {
-  position: relative;
-}
+/* .container1 {
+  /* position: relative; */
+/* } */ */
 
 .passigh {
   position: absolute;

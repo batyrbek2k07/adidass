@@ -50,6 +50,7 @@ async function ReadBasket(){
     let {data}=await axios(API_BASKET)
     setBasket(data)
 }
+console.log(Basket);
     const values = { 
         AddProduct,
         readProduct,

@@ -1,10 +1,13 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
-import logo from "../../images/logo.png";
-import { BsBagCheckFill } from "react-icons/bs";
-import { BsPersonFill } from "react-icons/bs";
-import { IoIosHeart } from "react-icons/io";
-import { Button } from "@mui/material";
+
+import { CgAdidas } from "react-icons/cg";
+import { RiAdminLine } from "react-icons/ri";
+import { SlLike } from "react-icons/sl";
+import { SlBasketLoaded } from "react-icons/sl";
+
+
+
 const Header = () => {
 
 
@@ -14,24 +17,21 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="logo">
-            <img onClick={()=>nav("/")} src={logo} alt="" />
+            <Link to="/home"><CgAdidas /></Link>
           </div>
           <nav>
-            <NavLink to="/">MEN</NavLink>
-            <NavLink to="/">WOMEN</NavLink>
-            <NavLink to="/">KIDS</NavLink>
-            <NavLink to="/">SALE</NavLink>
-            <NavLink to="/">3 STRIPE LIFE</NavLink>
+            <NavLink to="/men">MEN</NavLink>
+            <NavLink to="/women">WOMEN</NavLink>
+            <NavLink to="/kids">KIDS</NavLink>
+            <NavLink to="/sale">SALE</NavLink>
+            <NavLink to="/stripe">3 STRIPE LIFE</NavLink>
           </nav>
           <div className="header-input">
             <input type="search" placeholder="search" />
             <div className="header-icon">
-              <Button onClick={()=>nav("/admin")}>
-
-              <BsPersonFill />
-              </Button>
-              <IoIosHeart />
-              <BsBagCheckFill />
+           <Link to="/admin"><RiAdminLine /></Link>
+           <Link to="/like"><SlLike /></Link>
+           <Link to="/basket"><SlBasketLoaded /></Link>
             </div>
           </div>
         </div>
